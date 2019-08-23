@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import CharacterCard from './CharacterCard';
 
+//https://rickandmortyapi.com/api/character/ <<<<<------------- API
+
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [data, setData ] = useState([]);
@@ -28,7 +30,8 @@ export default function CharacterList() {
           img={data.image}
           name={data.name}
           species={data.species} status={data.status}
-          // origin={[data.origin]}
+          location={data.location.name}
+          origin={data.origin.name}
           
           />
         )) }
