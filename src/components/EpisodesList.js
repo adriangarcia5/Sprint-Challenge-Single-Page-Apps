@@ -9,7 +9,7 @@ export default function LocationsList() {
 
     useEffect(() => {
         Axios
-            .get(`https://rickandmortyapi.com/api/location/`)
+            .get(`https://rickandmortyapi.com/api/episodes/`)
             .then(res =>{
                 setData(res.data.results)
                 console.log('response',res)
@@ -23,11 +23,11 @@ export default function LocationsList() {
         {/* <LocationCard/> */}
         {data.map((data, id) => (
             <LocationCard
-            key={id}
-            name={data.name}
-            type={data.type}
-            dimension={data.dimension}
-            residents={data.residents.length}
+            // key={id}
+            // name={data.name}
+            // type={data.type}
+            // dimension={data.dimension}
+            // residents={data.residents.length}
             />
         ))}
 

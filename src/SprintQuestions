@@ -1,0 +1,8 @@
+ Explain benefit(s) using client-side routing?
+Answer: client side rounting does the same thing as server side routing, except the benefits are that client side is ran in the browser.
+
+ What does AJAX stand for?
+Answer: Asynchronous JavaScript and XML
+
+ What are controlled components in React?
+Answer: a component whose value is controlled by React. This dictates what happens in the form when a user does something or inputs a value.
